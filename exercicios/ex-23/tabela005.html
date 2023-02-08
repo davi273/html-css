@@ -31,72 +31,75 @@
     colspan="2" para ocupar coluna
     rowspan="3" para ocupar linha
     */
+    .csexo{
+        background-color: maroon;
+        color: aquamarine;
+    }
+    .cnome{
+        background-color: blue;
+        color: white;
+    }
+    .cp{
+        background-color: aquamarine
+        ;
+    }
+    .cv{
+        background-color: paleturquoise;
+    }
 </style>
 <body>
+    <h1>Exercício Tabela</h1>
     <table>
-        <thead class="p">
-            <tr >
-                <th rowspan="2" >Área</th>
-                <th rowspan="2">Disciplina</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Média</th>
-            </tr>
-            <tr>
-                <th>Nota1</th>
-                <th>Nota2</th>
-
-            </tr>
-        </thead>
-        <tbody>
-           <tr>
-            <th rowspan="4">Exatas</th>
-            <td> Matemática</td>
-            <td>7</td>
-            <td>7</td>
-            <td>7</td>
-           </tr> 
-           <tr>
-               <td>Física</td>
-               <td>7</td>
-               <td>7</td>
-               <td>7</td>
-           </tr>
-           <tr>
-            <td>Química</td>
-            <td>7</td>
-            <td>7</td>
-            <td>7</td>
-        </tr>
-        <tr>
-            <td>Biologia</td>
-            <td>7</td>
-            <td>7</td>
-            <td>7</td>
-        </tr>
-        <tr class="p">
-            <th colspan="4">Média de Exatas</th>
-            <td>7</td>
-        </tr>
-        <tr>
-            <th rowspan="2">
-                Humanas
-            </th>
-            <td>História</td>
-            <td>7</td>
-            <td>7</td>
-            <td>7</td>
-        </tr>
-        <tr>
-            <td>Geografia</td>
-            <td>7</td>
-            <td>7</td>
-            <td>7</td>
-        </tr>
-        <tr class="p">
-            <th colspan="4">Média de Humanas</th>
-            <td>7</td>
-        </tr>
-        </tbody>
+        <colgroup><!-- marcar coluna-->
+            <col class="cv">
+        <col class="cnome">
+            <col class="csexo"  span="1">
+            <col class="cp">
+          
+    </colgroup>
+      <caption>Cadastro</caption>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Profissão</th>
+      </tr>
+      <tr>
+        <td>Ana Maria</td>
+        <td>F</td>
+        <td>25</td>
+        <td>Jornalista</td>
+      </tr>
+      <tr>
+        <td>Mara</td>
+        <td>m</td>
+        <td>20</td>
+        <td>Jornalista</td>
+      </tr>
+      <tr>
+        <td>Anne</td>
+        <td>F</td>
+        <td>56</td>
+        <td>Radialista</td>
+      </tr>
+      <tr>
+        <td>Anya</td>
+        <td>F</td>
+        <td>25</td>
+        <td>dona de casa</td>
+      </tr>
+      <tr>
+        <td> Maria de jesus</td>
+        <td>F</td>
+        <td>35</td>
+        <td>desempregada</td>
+      </tr>
+      <tr>
+        <td>Marie</td>
+        <td>F</td>
+        <td>34</td>
+        <td>lutadora</td>
+      </tr>
     </table>
 </body>
 </html>
