@@ -8,15 +8,24 @@
     <style>
         *{
             font-family: Arial, Helvetica, sans-serif;
-        }
+        }/* use o method="post" quando quando você quiser que os dados não fiquem expostos na url e tem mais de 3000 carcteres
+
+        senao use o
+        method="get" 
+        */
     </style>
 </head>
 <body>
     <h1>Meu primeiro formulario</h1>
-    <form action="">
-        <p>NOME: <input type="text" name="nome" id="nome"></p>
-        <p>SOBRENOME: <input type="text" name="sobrenome" id="sobrenome"></p>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <p><label for="inome">Nome:</label>
+             <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
     </form>
+    <script>
+
+    </script>
 </body>
 </html>
